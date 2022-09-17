@@ -1,16 +1,28 @@
 {
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0"
-  },
   "name": "dashbord",
-  "description": "",
   "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marshalllife/dashbord.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marshalllife/dashbord/issues"
+  },
+  "homepage": "https://github.com/Marshalllife/dashbord#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bundler": "^0.8.0",
+    "parcel": "^2.7.0"
+  }
 }

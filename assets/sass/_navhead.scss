@@ -46,13 +46,26 @@ body {
         width: 17.3rem;
         position: fixed;
 
-
-
     }
 
     @include responsive(phone) {
         background: transparent;
         z-index: 4;
+    }
+
+
+    .company-name {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: fantasy;
+        position: relative;
+        bottom: 85px;
+        left: 40px;
+        display: inline-block;
+        border: 1px solid red;
+        padding: 15px;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 
     .nav_toggler {
@@ -78,7 +91,7 @@ body {
 
 
     nav {
-        padding-top: -50px;
+        padding-top: -100px;
 
         @include responsive(phone) {
             padding-top: 60px;

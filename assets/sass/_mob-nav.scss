@@ -3,23 +3,16 @@
     @include responsive(phone) {
 
 
-
         .nav {
             padding: 0.17rem 0.8rem;
             align-items: center;
-
         }
-
-
 
         .icon {
             width: 35px;
             height: 35px;
-
-
-
-
-
+            display: inline;
+            overflow: hidden;
 
 
             // @include responsive(desktop) {

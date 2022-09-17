@@ -2,7 +2,7 @@
 
 
     height: 100%;
-    margin-left: 21rem;
+    margin-left: 20rem;
 
     scroll-behavior: smooth;
 
@@ -24,22 +24,8 @@
 
         @include responsive(tab-phone) {
             margin-right: 105px;
-            margin-left: -30px;
+            margin-left: -20px;
         }
-
-        @include responsive(phone) {
-            margin: 0;
-
-
-
-        }
-
-
-
-
-
-
-
 
 
         .heading {
@@ -328,8 +314,8 @@
             white-space: wrap;
 
             @include responsive(tab-phone) {
-                margin-left: 20px;
-                width: 120%;
+                margin-left: -3px;
+                width: 125%;
             }
 
             @include responsive(phone) {

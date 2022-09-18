@@ -287,11 +287,6 @@ header {
   header {
     margin-left: 180px;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    left: 30px;
-    width: 65%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -300,7 +295,6 @@ header {
     padding-left: -3px;
     overflow: hidden;
     height: 50px;
-    position: fixed;
   }
 }
 @media only screen and (max-width: 421px) {
@@ -309,7 +303,6 @@ header {
     padding-left: -3px;
     overflow: hidden;
     height: 50px;
-    position: fixed;
   }
 }
 header .search-area {
@@ -496,7 +489,6 @@ header textarea:focus {
 .container {
   height: 100%;
   margin-left: 20rem;
-  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -506,17 +498,18 @@ header textarea:focus {
 @media only screen and (max-width: 421px) {
   .container {
     margin: 0 auto;
-    overflow: hidden;
   }
 }
 .container #content-area {
   margin: 2rem 5rem;
   padding-bottom: 5px;
+  position: relative;
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
   .container #content-area {
     margin-right: 105px;
-    margin-left: -25px;
+    margin-left: -5px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -534,13 +527,7 @@ header textarea:focus {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 15px;
-  margin-top: 30px;
-}
-@media only screen and (max-width: 768px) {
-  .container #content-area .heading h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
+  margin-top: 20px;
 }
 @media only screen and (max-width: 600px) {
   .container #content-area .heading h1 {
@@ -580,9 +567,6 @@ header textarea:focus {
   .container #content-area .gridx2 {
     grid-template-columns: repeat(2, 60%);
     grid-row-gap: 1.1rem;
-    grid-column-gap: 3.7rem;
-    position: relative;
-    z-index: -1;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -608,11 +592,6 @@ header textarea:focus {
   margin: 0 auto;
   overflow: hidden;
   white-space: wrap;
-}
-@media only screen and (max-width: 768px) {
-  .container #content-area .gridx2 .card1 {
-    width: 120%;
-  }
 }
 .container #content-area .gridx2 .card1 .user-img {
   background: url(https://randomuser.me/api/portraits/men/40.jpg) no-repeat center center;
@@ -703,28 +682,17 @@ header textarea:focus {
   border-left: 5px solid #92cf48;
   position: relative;
   left: -45px;
-  padding: 7px 38px;
-  margin: 15px 30px;
+  padding: 7px 35px;
+  margin: 14px 30px;
   white-space: nowrap;
   z-index: 1;
-}
-@media only screen and (max-width: 768px) {
-  .container #content-area .gridx2 .date {
-    padding: 7px 20px;
-    margin: 15px 30px;
-  }
 }
 .container #content-area .gridx2 .flx-row {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
   margin-bottom: 15px;
-  margin-left: 30px;
-}
-@media only screen and (max-width: 768px) {
-  .container #content-area .gridx2 .flx-row {
-    margin-left: 10px;
-  }
+  margin-left: 24px;
 }
 .container #content-area .gridx2 .flx-row .job-type {
   background: orange;
@@ -776,10 +744,31 @@ header textarea:focus {
   color: #a5adbd;
   margin-bottom: 0.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .container #content-area .containrow {
+    width: 135%;
+    position: absolute;
+    left: -20px;
+    margin-right: auto;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container #content-area .containrow {
+    width: 95%;
+    margin-left: 32px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+  }
+}
 @media only screen and (max-width: 421px) {
   .container #content-area .containrow {
-    width: 100vw;
-    overflow: auto;
+    position: relative;
+    left: -35px;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 50px;
   }
 }
 .container #content-area .containrow .card2 {
@@ -787,29 +776,24 @@ header textarea:focus {
   margin: 0 auto;
   height: 140px;
   margin-top: 30px;
+  width: 100%;
   border-radius: 10px;
-  width: 90vw;
   white-space: wrap;
 }
 @media only screen and (max-width: 768px) {
   .container #content-area .containrow .card2 {
-    width: 90vw;
-    position: absolute;
-    z-index: -1;
+    margin-left: -3px;
+    width: 120%;
   }
 }
 @media only screen and (max-width: 600px) {
   .container #content-area .containrow .card2 {
-    width: 60%;
-    margin-left: 10px;
-    overflow: auto;
+    width: 125%;
   }
 }
 @media only screen and (max-width: 421px) {
   .container #content-area .containrow .card2 {
-    width: 60%;
-    margin: 0 5px;
-    overflow: auto;
+    width: 125%;
   }
 }
 .container #content-area .containrow .card2 .thead {

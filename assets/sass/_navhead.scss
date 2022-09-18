@@ -182,6 +182,7 @@ header {
     background: #fff;
 
 
+
     @include responsive (small-desktop) {
         margin-left: 220px;
         font-size: 90%;
@@ -191,11 +192,6 @@ header {
         margin-left: 180px;
         // padding-left: -3px;
         overflow: hidden;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        left: 30px;
-        width: 65%;
     }
 
 
@@ -204,7 +200,8 @@ header {
         padding-left: -3px;
         overflow: hidden;
         height: 50px;
-        position: fixed;
+
+
     }
 
 
@@ -214,7 +211,7 @@ header {
         padding-left: -3px;
         overflow: hidden;
         height: 50px;
-        position: fixed;
+
 
     }
 

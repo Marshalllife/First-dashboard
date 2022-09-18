@@ -29,7 +29,7 @@
 
         @include responsive(phone) {
 
-            margin-right: auto;
+            margin: 0 auto;
 
 
         }
@@ -328,14 +328,9 @@
             @include responsive(phone) {
                 width: 95%;
                 margin-left: 10px;
-
-
-
-
+                overflow: hidden;
 
             }
-
-
 
             .thead {
 
@@ -345,6 +340,7 @@
                 font-size: 1.1rem;
                 font-weight: 400;
                 height: 40px;
+
 
 
 
@@ -361,6 +357,7 @@
 
                     @include responsive(phone) {
                         font-size: 90%;
+                        white-space: nowrap;
                     }
 
 
@@ -393,6 +390,7 @@
 
                 @include responsive(phone) {
                     font-size: 85%;
+                    white-space: nowrap;
                 }
 
             }

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="description" content="Simple Dashboard To view Jobs" />
+    <meta property="og:title" content="Dasboard.." />
+    <meta property="og:description" content="GoJobs" />
+    <meta property="og:type" content="website.." />
+    <meta property="og:image" content="https://" />
+    <meta property="og:url" content="https://" />
+    <title>Simple Dasboard</title>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link
@@ -14,6 +20,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- <header class="header-nav">
@@ -48,28 +56,51 @@
     <!-- New animation -->
 
     <section id="sidemenu">
-      <div class="nav collapsible">
-        <svg class="icon icon--white nav_toggler">
+      <div class="nav collapsible" data-aos="zoom-in">
+        <svg class="icon icon--white nav_toggler" data-aos="zoom-in-up">
           <use href="img/sprite.svg#menu"></use>
         </svg>
-        <a class="company-name" href="#">GoJobs</a>
+        <a class="company-name" href="#" data-aos="zoom-in">GoJobs</a>
         <div class="list">
           <nav class="collapsible__content nav__list">
-            <a href="#" class="active"><i class="fas fa-home"> </i> Home</a>
-            <a href="#"><i class="fas fa-sticky-note"></i>Applied History</a>
+            <a href="#" class="active"
+              ><i class="fas fa-home" data-aos="slide-left"> </i> Home</a
+            >
             <a href="#"
-              ><i class="fas fa-bookmark" aria-hidden="true"></i>Jobs
-              Bookmarks</a
+              ><i class="fas fa-sticky-note" data-aos="slide-right"></i>Applied
+              History</a
+            >
+            <a href="#"
+              ><i
+                class="fas fa-bookmark"
+                aria-hidden="true"
+                data-aos="slide-left"
+              ></i
+              ><span data-aos="slide-left"> Bookmarks</span></a
             >
             <a href=""
-              ><i class="fas fa-calendar-check" aria-hidden="true"></i>Interview
-              schedule</a
+              ><i
+                class="fas fa-calendar-check"
+                aria-hidden="true"
+                data-aos="slide-right"
+              ></i
+              ><span data-aos="slide-right">Interview schedule </span></a
             >
             <a href="#"
-              ><i class="fas fa-user-circle" aria-hidden="true"></i>Profile</a
+              ><i
+                class="fas fa-user-circle"
+                aria-hidden="true"
+                data-aos="slide-left"
+              ></i
+              ><span data-aos="slide-right">Profile</span></a
             >
             <a href="#"
-              ><i class="fas fa-cog" aria-hidden="true"></i>Settings</a
+              ><i
+                class="fas fa-cog"
+                aria-hidden="true"
+                data-aos="flip-right"
+              ></i
+              >Settings</a
             >
           </nav>
         </div>
@@ -77,12 +108,12 @@
     </section>
 
     <header>
-      <div class="search-area">
+      <div class="search-area" data-aos="ease-in">
         <i class="fas fa-search" aria-hidden="true"></i>
         <input type="text" value="" placeholder="Search here" />
       </div>
 
-      <div class="user-area">
+      <div class="user-area" data-aos="ease">
         <a href="#" class="add">+ Add</a>
         <a href="#" class="notification">
           <i class="fas fa-bell" aria-hidden="true"></i>
@@ -102,10 +133,10 @@
         </div>
 
         <div class="gridx2">
-          <div class="card1">
-            <div class="user-img"></div>
-            <span class="user-name">John lenno</span>
-            <span class="user-title">Full stack Developer</span>
+          <div class="card1" data-aos="slide-left">
+            <div class="user-img" data-aos="fade-up"></div>
+            <span class="user-name" data-aos="flip-down">John lenno</span>
+            <span class="user-title" data-aos="ease">Full stack Developer</span>
             <hr class="hr" />
 
             <div class="flex-edu">
@@ -120,7 +151,7 @@
             </div>
           </div>
 
-          <div class="card1">
+          <div class="card1" data-aos="slide-up">
             <h6>interview schedule</h6>
             <span class="date"> 21 july 2018 </span>
             <div class="flx-row">
@@ -142,7 +173,7 @@
             </div>
           </div>
 
-          <div class="card1">
+          <div class="card1" data-aos="slide-right">
             <h6>interview schedule</h6>
             <span class="date"> 21 july 2018 </span>
             <div class="flx-row">
@@ -156,7 +187,7 @@
           </div>
         </div>
 
-        <table class="card2">
+        <table class="card2" data-aos="zoom-in-up">
           <thead class="thead">
             <tr>
               <th class="move">Company</th>
@@ -189,10 +220,10 @@
     </div>
 
     <script src="jsmain/main.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+    </script>
     <!-- <div id="app"></div>
     <script src="/js/components/vendor.js"></script>
     <script src="/js/components/firstComp.js"></script> -->

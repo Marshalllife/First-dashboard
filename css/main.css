@@ -185,6 +185,7 @@ body {
   #sidemenu {
     width: 17.3rem;
     position: fixed;
+    z-index: 2;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -287,6 +288,10 @@ header {
   header {
     margin-left: 180px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -295,6 +300,9 @@ header {
     padding-left: -3px;
     overflow: hidden;
     height: 50px;
+    top: 0;
+    right: 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 421px) {
@@ -303,6 +311,9 @@ header {
     padding-left: -3px;
     overflow: hidden;
     height: 50px;
+    top: 0;
+    right: 0;
+    width: 100%;
   }
 }
 header .search-area {

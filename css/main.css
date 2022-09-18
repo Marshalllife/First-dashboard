@@ -298,6 +298,7 @@ header {
   header {
     margin-left: 0;
     padding-left: -3px;
+    padding-top: 6px;
     overflow: hidden;
     height: 50px;
     top: 0;

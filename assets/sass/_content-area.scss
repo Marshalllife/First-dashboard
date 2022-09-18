@@ -370,8 +370,10 @@
             }
 
             @include responsive(phone) {
-                width: 95%;
-                margin-left: 10px;
+                width: 60%;
+                margin: 0 5px;
+
+
                 overflow: hidden;
 
             }

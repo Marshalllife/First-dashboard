@@ -767,8 +767,8 @@ header textarea:focus {
 }
 @media only screen and (max-width: 421px) {
   .container #content-area .card2 {
-    width: 95%;
-    margin-left: 10px;
+    width: 60%;
+    margin: 0 5px;
     overflow: hidden;
   }
 }

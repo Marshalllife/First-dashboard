@@ -539,7 +539,7 @@ header textarea:focus {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 @media only screen and (max-width: 600px) {
   .container #content-area .heading h1 {

@@ -787,7 +787,7 @@ header textarea:focus {
 @media only screen and (max-width: 600px) {
   .container #content-area .card2 .thead .thead,
 .container #content-area .card2 .thead tbody {
-    overflow-x: scroll;
+    overflow: scroll;
   }
 }
 .container #content-area .card2 .thead th {

@@ -399,7 +399,7 @@
 
                     @include responsive(phone and phone-big) {
 
-                        overflow-x: scroll;
+                        overflow: scroll;
                     }
                 }
 

@@ -247,7 +247,7 @@ body {
   color: #a5adbd;
   font-size: 1rem;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-weight: 300;
   transition: all 0.3s ease-in-out;
 }
@@ -494,11 +494,13 @@ header textarea:focus {
 @media only screen and (max-width: 600px) {
   .container {
     margin: 0 auto;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 421px) {
   .container {
     margin: 0 auto;
+    overflow: hidden;
   }
 }
 .container #content-area {
@@ -781,6 +783,12 @@ header textarea:focus {
 }
 .container #content-area .card2 .thead .move {
   padding-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .container #content-area .card2 .thead .thead,
+.container #content-area .card2 .thead tbody {
+    overflow-x: scroll;
+  }
 }
 .container #content-area .card2 .thead th {
   vertical-align: middle;

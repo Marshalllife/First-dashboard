@@ -751,7 +751,7 @@ header textarea:focus {
   height: 140px;
   margin-top: 30px;
   border-radius: 10px;
-  width: 100%;
+  width: 90vw;
   white-space: wrap;
 }
 @media only screen and (max-width: 768px) {
@@ -764,14 +764,14 @@ header textarea:focus {
   .container #content-area .card2 {
     width: 95%;
     margin-left: 10px;
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 @media only screen and (max-width: 421px) {
   .container #content-area .card2 {
     width: 60%;
     margin: 0 5px;
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 .container #content-area .card2 .thead {
@@ -780,15 +780,10 @@ header textarea:focus {
   font-size: 1.1rem;
   font-weight: 400;
   height: 40px;
+  overflow: scroll;
 }
 .container #content-area .card2 .thead .move {
   padding-left: 20px;
-}
-@media only screen and (max-width: 600px) {
-  .container #content-area .card2 .thead .thead,
-.container #content-area .card2 .thead tbody {
-    overflow: scroll;
-  }
 }
 .container #content-area .card2 .thead th {
   vertical-align: middle;

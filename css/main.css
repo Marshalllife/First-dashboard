@@ -494,7 +494,6 @@ header textarea:focus {
 @media only screen and (max-width: 600px) {
   .container {
     margin: 0 auto;
-    overflow: hidden;
   }
 }
 @media only screen and (max-width: 421px) {
@@ -745,7 +744,13 @@ header textarea:focus {
   color: #a5adbd;
   margin-bottom: 0.5rem;
 }
-.container #content-area .card2 {
+@media only screen and (max-width: 421px) {
+  .container #content-area .containrow {
+    width: 100vw;
+    overflow: auto;
+  }
+}
+.container #content-area .containrow .card2 {
   background: #fff;
   margin: 0 auto;
   height: 140px;
@@ -755,53 +760,52 @@ header textarea:focus {
   white-space: wrap;
 }
 @media only screen and (max-width: 768px) {
-  .container #content-area .card2 {
+  .container #content-area .containrow .card2 {
     margin-left: -3px;
     width: 125%;
   }
 }
 @media only screen and (max-width: 600px) {
-  .container #content-area .card2 {
-    width: 95%;
+  .container #content-area .containrow .card2 {
+    width: 60%;
     margin-left: 10px;
-    overflow: scroll;
+    overflow-x: auto;
   }
 }
 @media only screen and (max-width: 421px) {
-  .container #content-area .card2 {
+  .container #content-area .containrow .card2 {
     width: 60%;
     margin: 0 5px;
-    overflow: scroll;
+    overflow-x: auto;
   }
 }
-.container #content-area .card2 .thead {
+.container #content-area .containrow .card2 .thead {
   background: #EAEDF3;
   color: #a5adbd;
   font-size: 1.1rem;
   font-weight: 400;
   height: 40px;
-  overflow: scroll;
 }
-.container #content-area .card2 .thead .move {
+.container #content-area .containrow .card2 .thead .move {
   padding-left: 20px;
 }
-.container #content-area .card2 .thead th {
+.container #content-area .containrow .card2 .thead th {
   vertical-align: middle;
   text-align: left;
 }
 @media only screen and (max-width: 600px) {
-  .container #content-area .card2 .thead th {
+  .container #content-area .containrow .card2 .thead th {
     font-size: 90%;
     white-space: nowrap;
   }
 }
 @media only screen and (max-width: 421px) {
-  .container #content-area .card2 .thead th {
+  .container #content-area .containrow .card2 .thead th {
     font-size: 90%;
     white-space: nowrap;
   }
 }
-.container #content-area .card2 td {
+.container #content-area .containrow .card2 td {
   border-bottom: 1px solid rgba(231, 227, 227, 0.5);
   vertical-align: middle;
   color: rgba(0, 0, 0, 0.39);
@@ -812,18 +816,18 @@ header textarea:focus {
   text-align: left;
 }
 @media only screen and (max-width: 600px) {
-  .container #content-area .card2 td {
+  .container #content-area .containrow .card2 td {
     font-size: 85%;
     white-space: wrap;
   }
 }
 @media only screen and (max-width: 421px) {
-  .container #content-area .card2 td {
+  .container #content-area .containrow .card2 td {
     font-size: 85%;
     white-space: nowrap;
   }
 }
-.container #content-area .card2 .job-ty::before {
+.container #content-area .containrow .card2 .job-ty::before {
   content: "OS";
   background: orange;
   background-repeat: none;
@@ -842,7 +846,7 @@ header textarea:focus {
   left: -8px;
   margin-left: 20px;
 }
-.container #content-area .card2 .job-t::before {
+.container #content-area .containrow .card2 .job-t::before {
   content: "DS";
   background: rgba(24, 165, 35, 0.805);
   background-repeat: none;

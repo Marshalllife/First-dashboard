@@ -8,7 +8,7 @@
 
     @include responsive(phone-big) {
         margin: 0 auto;
-        overflow: hidden;
+
 
 
     }
@@ -16,6 +16,7 @@
     @include responsive(phone) {
         margin: 0 auto;
         overflow: hidden;
+
 
 
     }
@@ -37,6 +38,8 @@
 
         @include responsive(phone-big) {
             margin: 0 auto;
+
+
 
 
         }
@@ -345,146 +348,154 @@
 
         }
 
-
-
-        .card2 {
-            // border: 2px solid;
-            background: #fff;
-            // padding: 15px;
-            margin: 0 auto;
-            height: 140px;
-            margin-top: 30px;
-
-            border-radius: 10px;
-            width: 90vw;
-            white-space: wrap;
-
-            @include responsive(tab-phone) {
-                margin-left: -3px;
-                width: 125%;
-            }
-
-            @include responsive(phone-big) {
-                width: 95%;
-                margin-left: 10px;
-                overflow: scroll;
-
-            }
-
+        .containrow {
             @include responsive(phone) {
-                width: 60%;
-                margin: 0 5px;
-                overflow: scroll;
 
+                width: 100vw;
+                overflow: auto
             }
 
-            .thead {
+            .card2 {
+                // border: 2px solid;
+                background: #fff;
+                // padding: 15px;
+                margin: 0 auto;
+                height: 140px;
+                margin-top: 30px;
+
+                border-radius: 10px;
+                width: 90vw;
+                white-space: wrap;
 
 
-                background: $greyDarkBG;
-                color: $greyDarkfont2;
-                font-size: 1.1rem;
-                font-weight: 400;
-                height: 40px;
-                overflow: scroll;
+                @include responsive(tab-phone) {
+                    margin-left: -3px;
+                    width: 125%;
 
-
-
-                .move {
-                    padding-left: 20px;
-                }
-
-
-
-                th {
-                    vertical-align: middle;
-                    text-align: left;
-
-                    @include responsive(phone-big) {
-                        font-size: 90%;
-                        white-space: nowrap;
-                    }
-
-                    @include responsive(phone) {
-                        font-size: 90%;
-                        white-space: nowrap;
-                    }
 
                 }
-
-
-            }
-
-            td {
-
-                border-bottom: 1px solid rgba(231, 227, 227, 0.5);
-                vertical-align: middle;
-                color: rgba(0, 0, 0, 0.39);
-                font-weight: 500;
-                font-size: 0.99rem;
-                text-decoration: none;
-                white-space: inherit;
-                text-align: left;
 
                 @include responsive(phone-big) {
-                    font-size: 85%;
-                    white-space: wrap;
+                    width: 60%;
+                    margin-left: 10px;
+                    overflow-x: auto;
                 }
 
                 @include responsive(phone) {
-                    font-size: 85%;
-                    white-space: nowrap;
+                    width: 60%;
+                    margin: 0 5px;
+                    overflow-x: auto;
                 }
 
+                .thead {
+
+
+                    background: $greyDarkBG;
+                    color: $greyDarkfont2;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    height: 40px;
+
+
+
+
+                    .move {
+                        padding-left: 20px;
+                    }
+
+
+
+                    th {
+                        vertical-align: middle;
+                        text-align: left;
+
+                        @include responsive(phone-big) {
+                            font-size: 90%;
+                            white-space: nowrap;
+                        }
+
+                        @include responsive(phone) {
+                            font-size: 90%;
+                            white-space: nowrap;
+
+                        }
+
+                    }
+
+
+                }
+
+                td {
+
+                    border-bottom: 1px solid rgba(231, 227, 227, 0.5);
+                    vertical-align: middle;
+                    color: rgba(0, 0, 0, 0.39);
+                    font-weight: 500;
+                    font-size: 0.99rem;
+                    text-decoration: none;
+                    white-space: inherit;
+                    text-align: left;
+
+                    @include responsive(phone-big) {
+                        font-size: 85%;
+                        white-space: wrap;
+                    }
+
+                    @include responsive(phone) {
+                        font-size: 85%;
+                        white-space: nowrap;
+                    }
+
+                }
+
+
+                .job-ty::before {
+                    content: "OS";
+                    background: orange;
+                    background-repeat: none;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    font-size: 0.7rem;
+                    color: #fff;
+
+                    padding-top: 9px;
+                    padding-right: -4px;
+                    display: inline-block;
+                    text-align: center;
+                    align-self: center;
+                    position: relative;
+                    top: -4px;
+                    left: -8px;
+                    margin-left: 20px;
+                }
+
+                .job-t::before {
+                    content: "DS";
+                    background: rgba(24, 165, 35, 0.805);
+                    background-repeat: none;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    font-size: 0.7rem;
+                    color: #fff;
+
+                    padding-top: 9px;
+                    padding-right: -4px;
+                    display: inline-block;
+                    text-align: center;
+                    align-self: center;
+                    position: relative;
+                    top: -4px;
+                    left: -8px;
+                    margin-left: 20px;
+                }
+
+
+
             }
-
-
-            .job-ty::before {
-                content: "OS";
-                background: orange;
-                background-repeat: none;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                font-size: 0.7rem;
-                color: #fff;
-
-                padding-top: 9px;
-                padding-right: -4px;
-                display: inline-block;
-                text-align: center;
-                align-self: center;
-                position: relative;
-                top: -4px;
-                left: -8px;
-                margin-left: 20px;
-            }
-
-            .job-t::before {
-                content: "DS";
-                background: rgba(24, 165, 35, 0.805);
-                background-repeat: none;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                font-size: 0.7rem;
-                color: #fff;
-
-                padding-top: 9px;
-                padding-right: -4px;
-                display: inline-block;
-                text-align: center;
-                align-self: center;
-                position: relative;
-                top: -4px;
-                left: -8px;
-                margin-left: 20px;
-            }
-
-
 
         }
-
     }
 }
 

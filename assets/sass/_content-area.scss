@@ -382,12 +382,16 @@
             }
 
             @include responsive(phone) {
-                position: relative;
+                // position: relative;
                 left: -35px;
-
+                padding-bottom: 50px;
                 width: 100%;
                 overflow-x: scroll;
-                margin-bottom: 50px;
+
+
+
+
+
             }
 
 
@@ -420,6 +424,8 @@
                 @include responsive(phone) {
 
                     width: 125%;
+
+
 
                 }
 

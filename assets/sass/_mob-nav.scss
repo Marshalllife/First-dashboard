@@ -1,11 +1,24 @@
 #sidemenu {
 
     @include responsive(phone and phone-big) {
+        width: 1px;
+        height: 1px;
 
+        .collapsible {
+            width: 1px;
+            height: 1px;
+        }
+
+        .company-name {
+            display: none;
+        }
 
         .nav {
             padding: 0.17rem 0.8rem;
             align-items: center;
+            width: 1px;
+            height: 1px;
+
         }
 
         .icon {
@@ -70,7 +83,7 @@
             opacity: 0;
             position: relative;
             right: 8px;
-            top: -20px;
+            bottom: -8px;
             transition: all 0.6s;
             width: 47vw;
             box-shadow: 0 0 0 3px #666;

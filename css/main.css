@@ -273,6 +273,7 @@ header {
     margin-left: 0;
     padding-left: -3px;
     overflow: hidden;
+    height: 50px;
   }
 }
 header .search-area {
@@ -282,6 +283,7 @@ header .search-area {
 @media only screen and (max-width: 600px) {
   header .search-area {
     margin-left: 40px;
+    padding-top: 3px;
   }
 }
 header .search-area .fas {
@@ -298,16 +300,26 @@ header .search-area input[type=text] {
   width: 80%;
   transition: all 0.5s ease-in-out;
 }
+@media only screen and (max-width: 600px) {
+  header .search-area input[type=text] {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .search-area input[type=text] {
+    padding-top: 15px;
+  }
+}
 header .search-area input[type=text]::-moz-placeholder {
-  text-align: center;
+  text-align: left;
   font-weight: 100;
 }
 header .search-area input[type=text]:-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
   font-weight: 100;
 }
 header .search-area input[type=text]::placeholder {
-  text-align: center;
+  text-align: left;
   font-weight: 100;
 }
 header .search-area input[type=text]:hover {
@@ -332,7 +344,7 @@ header .user-area {
     display: flex;
     align-items: flex-start;
     position: relative;
-    bottom: 1px;
+    top: -3rem;
     left: 10px;
     padding-right: 0;
   }
@@ -440,7 +452,7 @@ header textarea:focus {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 .container #content-area {
@@ -451,6 +463,11 @@ header textarea:focus {
   .container #content-area {
     margin-right: 105px;
     margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container #content-area {
+    margin-right: auto;
   }
 }
 .container #content-area .heading h1 {

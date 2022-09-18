@@ -150,7 +150,6 @@ body {
 
 header {
     margin-left: 290px;
-
     background: #fff;
 
 
@@ -171,6 +170,16 @@ header {
         margin-left: 0;
         padding-left: -3px;
         overflow: hidden;
+        height: 50px;
+
+    }
+
+
+    @include responsive(small-phone) {
+        margin-left: 0;
+        padding-left: -3px;
+        overflow: hidden;
+        height: 50px;
 
     }
 
@@ -182,6 +191,7 @@ header {
 
         @include responsive(phone) {
             margin-left: 40px;
+            padding-top: 3px;
         }
 
 
@@ -204,10 +214,17 @@ header {
             width: 80%;
             transition: all 0.50s ease-in-out;
 
+            @include responsive(phone) {
+                padding-top: 15px;
+            }
+
+            @include responsive(phone) {
+                padding-top: 15px;
+            }
 
 
             &::placeholder {
-                text-align: center;
+                text-align: left;
                 font-weight: 100;
 
 
@@ -235,19 +252,19 @@ header {
 
         }
 
+
+
+
         @include responsive(phone) {
             display: flex;
             align-items: flex-start;
             position: relative;
-            bottom: 1px;
+            top: -3rem;
             left: 10px;
             padding-right: 0;
-
-
-
-
-
         }
+
+
 
 
 

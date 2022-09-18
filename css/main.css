@@ -776,11 +776,10 @@ header textarea:focus {
 }
 @media only screen and (max-width: 421px) {
   .container #content-area .containrow {
-    position: relative;
     left: -35px;
+    padding-bottom: 50px;
     width: 100%;
     overflow-x: scroll;
-    margin-bottom: 50px;
   }
 }
 .container #content-area .containrow .card2 {

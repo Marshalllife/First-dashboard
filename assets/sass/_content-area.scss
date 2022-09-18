@@ -6,6 +6,12 @@
 
     scroll-behavior: smooth;
 
+    @include responsive(phone-big) {
+        margin: 0 auto;
+
+
+    }
+
     @include responsive(phone) {
         margin: 0 auto;
 
@@ -27,6 +33,12 @@
             margin-left: -20px;
         }
 
+        @include responsive(phone-big) {
+            margin: 0 auto;
+
+
+        }
+
         @include responsive(phone) {
 
             margin: 0 auto;
@@ -44,6 +56,15 @@
                 margin-bottom: 15px;
                 margin-top: 30px;
 
+
+                @include responsive(phone-big) {
+
+                    display: block;
+                    text-align: center;
+
+
+                }
+
                 @include responsive(phone) {
 
                     display: block;
@@ -60,6 +81,11 @@
                 margin-bottom: 12px;
                 margin-top: 10px;
                 color: $greyDarkfont2;
+
+                @include responsive(phone-big) {
+                    text-align: center;
+                }
+
 
                 @include responsive(phone) {
                     text-align: center;
@@ -79,11 +105,18 @@
                 grid-row-gap: 1.1rem;
             }
 
+            @include responsive(phone-big) {
+                grid-template-columns: repeat(1, 60%);
+                grid-row-gap: 1.1rem;
+                justify-content: center;
+            }
+
             @include responsive(phone) {
                 grid-template-columns: repeat(1, 60%);
                 grid-row-gap: 1.1rem;
                 justify-content: center;
             }
+
 
 
 
@@ -138,6 +171,10 @@
                     margin: 10px 0 18px;
                     color: $greyDarkfont2;
                     font-weight: 500;
+
+                    @include responsive(phone-big) {
+                        font-size: 95%;
+                    }
 
                     @include responsive(phone) {
                         font-size: 89%;
@@ -325,6 +362,13 @@
                 width: 125%;
             }
 
+            @include responsive(phone-big) {
+                width: 95%;
+                margin-left: 10px;
+                overflow: hidden;
+
+            }
+
             @include responsive(phone) {
                 width: 95%;
                 margin-left: 10px;
@@ -343,10 +387,6 @@
 
 
 
-
-
-
-
                 .move {
                     padding-left: 20px;
                 }
@@ -355,27 +395,20 @@
                     vertical-align: middle;
                     text-align: left;
 
+                    @include responsive(phone-big) {
+                        font-size: 90%;
+                        white-space: nowrap;
+                    }
+
                     @include responsive(phone) {
                         font-size: 90%;
                         white-space: nowrap;
                     }
 
-
-
-
-
-
-
-
-
-
                 }
 
 
             }
-
-
-
 
             td {
 
@@ -387,6 +420,11 @@
                 text-decoration: none;
                 white-space: inherit;
                 text-align: left;
+
+                @include responsive(phone-big) {
+                    font-size: 85%;
+                    white-space: wrap;
+                }
 
                 @include responsive(phone) {
                     font-size: 85%;

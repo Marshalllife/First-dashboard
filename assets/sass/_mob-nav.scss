@@ -1,6 +1,6 @@
 #sidemenu {
 
-    @include responsive(phone) {
+    @include responsive(phone and phone-big) {
 
 
         .nav {
@@ -75,13 +75,8 @@
             width: 40vw;
             box-shadow: 0 0 0 3px #666;
             border-radius: 4px;
+            white-space: wrap;
 
-
-            @include responsive(phone) {}
-
-            width: 48vw;
-            position: relative;
-            z-index: 0;
 
 
         }

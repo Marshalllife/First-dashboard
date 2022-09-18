@@ -7,12 +7,16 @@
 html {
     font-size: 62.5%;
 
-    @include responsive(phone) {
-        font-size: 75.75%;
-    }
 
-    @include responsive(tab-phone) {
-        font-size: 75.75%;
+
+
+
+
+
+
+
+    @include responsive(desktop) {
+        font-size: 90%;
     }
 
     @include responsive (small-desktop) {
@@ -20,8 +24,16 @@ html {
         font-size: 70%;
     }
 
-    @include responsive(desktop) {
+    @include responsive(tab-phone) {
+        font-size: 75.75%;
+    }
+
+    @include responsive(phone-big) {
         font-size: 90%;
+    }
+
+    @include responsive(phone) {
+        font-size: 74%;
     }
 }
 
@@ -46,6 +58,12 @@ body {
         width: 17.3rem;
         position: fixed;
 
+    }
+
+
+    @include responsive(phone-big) {
+        background: transparent;
+        z-index: 4;
     }
 
     @include responsive(phone) {
@@ -80,8 +98,10 @@ body {
 
         @include responsive(tab-phone) {
             visibility: hidden;
+        }
 
-
+        @include responsive(phone-big) {
+            visibility: visible;
         }
 
         @include responsive(phone) {
@@ -95,6 +115,11 @@ body {
 
     nav {
         padding-top: -100px;
+
+
+        @include responsive(phone-big) {
+            padding-top: 60px;
+        }
 
         @include responsive(phone) {
             padding-top: 60px;
@@ -168,6 +193,14 @@ header {
     }
 
 
+    @include responsive(phone-big) {
+        margin-left: 0;
+        padding-left: -3px;
+        overflow: hidden;
+        height: 50px;
+    }
+
+
 
     @include responsive(phone) {
         margin-left: 0;
@@ -178,13 +211,13 @@ header {
     }
 
 
-    @include responsive(small-phone) {
-        margin-left: 0;
-        padding-left: -3px;
-        overflow: hidden;
-        height: 50px;
+    // @include responsive(small-phone) {
+    //     margin-left: 0;
+    //     padding-left: -3px;
+    //     overflow: hidden;
+    //     height: 50px;
 
-    }
+    // }
 
 
 
@@ -192,14 +225,16 @@ header {
         display: inline-block;
         width: 50%;
 
-        @include responsive(phone) {
+
+        @include responsive(phone-big) {
             margin-left: 40px;
             padding-top: 3px;
         }
 
-
-
-
+        @include responsive(phone) {
+            margin-left: 40px;
+            padding-top: 3px;
+        }
 
         .fas {
             color: $greyDarkfont2;
@@ -221,9 +256,7 @@ header {
                 padding-top: 15px;
             }
 
-            @include responsive(phone) {
-                padding-top: 15px;
-            }
+
 
 
             &::placeholder {
@@ -257,7 +290,6 @@ header {
 
 
 
-
         @include responsive(phone) {
             display: flex;
             align-items: flex-start;
@@ -266,7 +298,6 @@ header {
             left: 10px;
             padding-right: 0;
         }
-
 
 
 
@@ -328,6 +359,9 @@ header {
             }
 
         }
+
+
+
     }
 
     input:active,

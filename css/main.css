@@ -143,14 +143,9 @@ table {
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1140px) {
   html {
-    font-size: 75.75%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 75.75%;
+    font-size: 90%;
   }
 }
 @media only screen and (max-width: 1139px) {
@@ -158,9 +153,19 @@ html {
     font-size: 70%;
   }
 }
-@media only screen and (min-width: 1140px) {
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75.75%;
+  }
+}
+@media only screen and (max-width: 600px) {
   html {
     font-size: 90%;
+  }
+}
+@media only screen and (max-width: 421px) {
+  html {
+    font-size: 74%;
   }
 }
 
@@ -183,6 +188,12 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  #sidemenu {
+    background: transparent;
+    z-index: 4;
+  }
+}
+@media only screen and (max-width: 421px) {
   #sidemenu {
     background: transparent;
     z-index: 4;
@@ -213,10 +224,20 @@ body {
     visibility: visible;
   }
 }
+@media only screen and (max-width: 421px) {
+  #sidemenu .nav_toggler {
+    visibility: visible;
+  }
+}
 #sidemenu nav {
   padding-top: -100px;
 }
 @media only screen and (max-width: 600px) {
+  #sidemenu nav {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 421px) {
   #sidemenu nav {
     padding-top: 60px;
   }
@@ -276,11 +297,25 @@ header {
     height: 50px;
   }
 }
+@media only screen and (max-width: 421px) {
+  header {
+    margin-left: 0;
+    padding-left: -3px;
+    overflow: hidden;
+    height: 50px;
+  }
+}
 header .search-area {
   display: inline-block;
   width: 50%;
 }
 @media only screen and (max-width: 600px) {
+  header .search-area {
+    margin-left: 40px;
+    padding-top: 3px;
+  }
+}
+@media only screen and (max-width: 421px) {
   header .search-area {
     margin-left: 40px;
     padding-top: 3px;
@@ -300,12 +335,7 @@ header .search-area input[type=text] {
   width: 80%;
   transition: all 0.5s ease-in-out;
 }
-@media only screen and (max-width: 600px) {
-  header .search-area input[type=text] {
-    padding-top: 15px;
-  }
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   header .search-area input[type=text] {
     padding-top: 15px;
   }
@@ -339,7 +369,7 @@ header .user-area {
     left: 10px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   header .user-area {
     display: flex;
     align-items: flex-start;
@@ -448,21 +478,25 @@ header textarea:focus {
     width: 40vw;
     box-shadow: 0 0 0 3px #666;
     border-radius: 4px;
-    width: 48vw;
-    position: relative;
-    z-index: 0;
+    white-space: wrap;
   }
   #sidemenu .collapsible--expanded .collapsible__content {
     max-height: 100%;
     opacity: 1;
   }
 }
+
 .container {
   height: 100%;
   margin-left: 20rem;
   scroll-behavior: smooth;
 }
 @media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 421px) {
   .container {
     margin: 0 auto;
   }
@@ -482,6 +516,11 @@ header textarea:focus {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 421px) {
+  .container #content-area {
+    margin: 0 auto;
+  }
+}
 .container #content-area .heading h1 {
   color: #744bce;
   font-size: 1.5rem;
@@ -490,6 +529,12 @@ header textarea:focus {
   margin-top: 30px;
 }
 @media only screen and (max-width: 600px) {
+  .container #content-area .heading h1 {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 421px) {
   .container #content-area .heading h1 {
     display: block;
     text-align: center;
@@ -507,6 +552,11 @@ header textarea:focus {
     text-align: center;
   }
 }
+@media only screen and (max-width: 421px) {
+  .container #content-area .heading p {
+    text-align: center;
+  }
+}
 .container #content-area .gridx2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -519,6 +569,13 @@ header textarea:focus {
   }
 }
 @media only screen and (max-width: 600px) {
+  .container #content-area .gridx2 {
+    grid-template-columns: repeat(1, 60%);
+    grid-row-gap: 1.1rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 421px) {
   .container #content-area .gridx2 {
     grid-template-columns: repeat(1, 60%);
     grid-row-gap: 1.1rem;
@@ -561,6 +618,11 @@ header textarea:focus {
 }
 @media only screen and (max-width: 600px) {
   .container #content-area .gridx2 .card1 .user-title {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width: 421px) {
+  .container #content-area .gridx2 .card1 .user-title {
     font-size: 89%;
   }
 }
@@ -584,7 +646,7 @@ header textarea:focus {
   align-self: flex-start;
   white-space: wrap;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   .container #content-area .gridx2 .card1 .flex-edu .education {
     font-size: 90%;
   }
@@ -596,7 +658,7 @@ header textarea:focus {
   height: 2vh;
   white-space: nowrap;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   .container #content-area .gridx2 .card1 .flex-edu .school {
     font-size: 85%;
   }
@@ -608,7 +670,7 @@ header textarea:focus {
   font-size: 0.9rem;
   color: #a5adbd;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   .container #content-area .gridx2 h6 {
     font-size: 110%;
   }
@@ -662,7 +724,7 @@ header textarea:focus {
   margin-bottom: 0.5rem;
   color: #a5adbd;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 421px) {
   .container #content-area .gridx2 .flx-row .location {
     font-size: 120%;
   }
@@ -703,6 +765,13 @@ header textarea:focus {
     overflow: hidden;
   }
 }
+@media only screen and (max-width: 421px) {
+  .container #content-area .card2 {
+    width: 95%;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+}
 .container #content-area .card2 .thead {
   background: #EAEDF3;
   color: #a5adbd;
@@ -723,6 +792,12 @@ header textarea:focus {
     white-space: nowrap;
   }
 }
+@media only screen and (max-width: 421px) {
+  .container #content-area .card2 .thead th {
+    font-size: 90%;
+    white-space: nowrap;
+  }
+}
 .container #content-area .card2 td {
   border-bottom: 1px solid rgba(231, 227, 227, 0.5);
   vertical-align: middle;
@@ -734,6 +809,12 @@ header textarea:focus {
   text-align: left;
 }
 @media only screen and (max-width: 600px) {
+  .container #content-area .card2 td {
+    font-size: 85%;
+    white-space: wrap;
+  }
+}
+@media only screen and (max-width: 421px) {
   .container #content-area .card2 td {
     font-size: 85%;
     white-space: nowrap;

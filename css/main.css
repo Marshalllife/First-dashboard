@@ -212,6 +212,11 @@ body {
   border: 1px solid red;
   padding: 15px;
 }
+@media only screen and (max-width: 600px) {
+  #sidemenu .company-name {
+    display: none;
+  }
+}
 #sidemenu .nav_toggler {
   visibility: hidden;
 }
@@ -235,12 +240,12 @@ body {
 }
 @media only screen and (max-width: 600px) {
   #sidemenu nav {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 421px) {
   #sidemenu nav {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 #sidemenu nav a {
@@ -258,9 +263,6 @@ body {
 }
 #sidemenu nav a .fas {
   color: #92cf48;
-}
-#sidemenu nav a .fas {
-  color: #92cf48;
   font-size: 2rem;
   margin-right: 0.8rem;
   display: inline-block;
@@ -272,6 +274,11 @@ body {
   background: #282639;
   border-left: 5px solid #92cf48;
   padding: 15px 30px 15px 25px;
+}
+@media only screen and (max-width: 600px) {
+  #sidemenu nav a.active {
+    border-left: 0px solid #92cf48;
+  }
 }
 
 header {
@@ -310,7 +317,7 @@ header {
 @media only screen and (max-width: 421px) {
   header {
     margin-left: 0;
-    padding-left: -3px;
+    padding-left: -2px;
     overflow: hidden;
     height: 50px;
     top: 0;
@@ -330,13 +337,18 @@ header .search-area {
 }
 @media only screen and (max-width: 421px) {
   header .search-area {
-    margin-left: 40px;
+    margin-left: 15px;
     padding-top: 3px;
   }
 }
 header .search-area .fas {
   color: #a5adbd;
   margin-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  header .search-area .fas {
+    margin-left: 10px;
+  }
 }
 header .search-area input[type=text] {
   background: transparent;
@@ -369,7 +381,6 @@ header .search-area input[type=text]:hover {
   background: #EAEDF3;
 }
 header .user-area {
-  display: inline-block;
   padding: 3px;
   float: right;
 }
@@ -387,9 +398,10 @@ header .user-area {
     display: flex;
     align-items: flex-start;
     position: relative;
-    top: -40px;
-    left: 10px;
+    top: -35px;
+    left: 15px;
     padding-right: 0;
+    vertical-align: middle;
   }
 }
 header .user-area a {
@@ -400,10 +412,20 @@ header .user-area a {
   vertical-align: top;
   height: 30px;
 }
+@media only screen and (max-width: 600px) {
+  header .user-area a {
+    padding-right: 15px;
+  }
+}
 header .user-area a.add {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 7px;
+}
+@media only screen and (max-width: 600px) {
+  header .user-area a.add {
+    font-size: 14px;
+  }
 }
 header .user-area a.notification {
   position: relative;
@@ -423,6 +445,11 @@ header .user-area a.notification .circle {
   top: 3px;
   left: 7px;
 }
+@media only screen and (max-width: 600px) {
+  header .user-area a.notification {
+    font-size: 16px;
+  }
+}
 header .user-area a .user-img {
   background: url(https://randomuser.me/api/portraits/men/40.jpg) no-repeat center center;
   background-size: cover;
@@ -432,9 +459,21 @@ header .user-area a .user-img {
   display: inline-block;
   margin-right: 10px;
 }
+@media only screen and (max-width: 600px) {
+  header .user-area a .user-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+}
 header .user-area a .fa-caret-down {
   position: relative;
   top: -8px;
+}
+@media only screen and (max-width: 600px) {
+  header .user-area a .fa-caret-down {
+    margin-right: 5px;
+  }
 }
 header input:active,
 header input:focus,
@@ -444,54 +483,49 @@ header textarea:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  #sidemenu {
+  .collapsible {
     width: 1px;
     height: 1px;
+    opacity: 0;
   }
-  #sidemenu .collapsible {
-    width: 1px;
-    height: 1px;
-  }
-  #sidemenu .company-name {
-    display: none;
-  }
-  #sidemenu .nav {
+  .nav {
     padding: 0.17rem 0.8rem;
     align-items: center;
     width: 1px;
     height: 1px;
+    opacity: 0;
   }
-  #sidemenu .icon {
+  .icon {
     width: 35px;
     height: 35px;
     display: inline;
     overflow: hidden;
     margin-top: 4px;
   }
-  #sidemenu .icon--white {
+  .icon--white {
     fill: rgb(167, 19, 208);
   }
-  #sidemenu .nav__toggler {
+  .nav__toggler {
     opacity: 0.5;
     transition: box-shadow 0.1s;
     cursor: pointer;
     position: fixed;
     box-shadow: 0 0 0 3px rgba(225, 149, 149, 0.089);
   }
-  #sidemenu .nav__list {
+  .nav__list {
     width: 100%;
     margin: 0;
   }
-  #sidemenu .list {
+  .list {
     list-style: none;
     padding-left: 0;
   }
-  #sidemenu .nav.collapsible--expanded.nav__toggler {
+  .nav.collapsible--expanded.nav__toggler {
     opacity: 1;
     box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
   }
-  #sidemenu .collapsible__content {
+  .collapsible__content {
     background: #302d43;
     font-size: 100%;
     height: 60vh;
@@ -499,19 +533,18 @@ header textarea:focus {
     opacity: 0;
     position: relative;
     right: 8px;
-    bottom: -8px;
+    top: 10px;
     transition: all 0.6s;
-    width: 47vw;
+    width: 50vw;
     box-shadow: 0 0 0 3px #666;
     border-radius: 4px;
     white-space: nowrap;
   }
-  #sidemenu .collapsible--expanded .collapsible__content {
+  .collapsible--expanded .collapsible__content {
     max-height: 100%;
     opacity: 1;
   }
 }
-
 .container {
   height: 100%;
   margin-left: 20rem;

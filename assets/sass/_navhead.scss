@@ -65,6 +65,9 @@ body {
     @include responsive(phone-big) {
         background: transparent;
         z-index: 4;
+
+
+
     }
 
     @include responsive(phone) {
@@ -87,7 +90,10 @@ body {
         border: 1px solid red;
         padding: 15px;
 
+        @include responsive(phone-big) {
+            display: none;
 
+        }
 
     }
 
@@ -104,10 +110,12 @@ body {
 
         @include responsive(phone-big) {
             visibility: visible;
+
         }
 
         @include responsive(phone) {
             visibility: visible;
+
 
         }
 
@@ -120,11 +128,12 @@ body {
 
 
         @include responsive(phone-big) {
-            padding-top: 60px;
+            padding-top: 30px;
+
         }
 
         @include responsive(phone) {
-            padding-top: 60px;
+            padding-top: 30px;
 
 
         }
@@ -141,20 +150,17 @@ body {
             font-weight: 300;
             transition: all .3s ease-in-out;
 
-
-
             &:hover {
                 background: $purpleDark;
                 // border-left: 5px solid $greenNeon;
                 padding: 15px 30px 15px 25px;
 
-
-
             }
 
-            .fas {
-                color: $greenNeon;
-            }
+            // .fas {
+            //     // color: $greenNeon;
+
+            // }
 
             .fas {
                 color: $greenNeon;
@@ -170,8 +176,12 @@ body {
                 background: $purpleDark;
                 border-left: 5px solid $greenNeon;
                 padding: 15px 30px 15px 25px;
-            }
 
+                @include responsive(phone and phone-big) {
+                    border-left: 0px solid $greenNeon;
+
+                }
+            }
         }
     }
 }
@@ -222,12 +232,13 @@ header {
 
     @include responsive(phone) {
         margin-left: 0;
-        padding-left: -3px;
+        padding-left: -2px;
         overflow: hidden;
         height: 50px;
         top: 0;
         right: 0;
         width: 100%;
+
 
 
     }
@@ -254,13 +265,18 @@ header {
         }
 
         @include responsive(phone) {
-            margin-left: 40px;
+            margin-left: 15px;
             padding-top: 3px;
         }
 
         .fas {
             color: $greyDarkfont2;
             margin-left: 20px;
+
+            @include responsive(phone and phone-big) {
+                margin-left: 10px;
+
+            }
 
         }
 
@@ -296,7 +312,7 @@ header {
     }
 
     .user-area {
-        display: inline-block;
+        // display: inline-block;
         padding: 3px;
         float: right;
 
@@ -316,9 +332,10 @@ header {
             display: flex;
             align-items: flex-start;
             position: relative;
-            top: -40px;
-            left: 10px;
+            top: -35px;
+            left: 15px;
             padding-right: 0;
+            vertical-align: middle;
         }
 
 
@@ -332,10 +349,18 @@ header {
             vertical-align: top;
             height: 30px;
 
+            @include responsive(phone and phone-big) {
+                padding-right: 15px;
+            }
+
             &.add {
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 400;
                 padding-top: 7px;
+
+                @include responsive(phone and phone-big) {
+                    font-size: 14px;
+                }
             }
 
 
@@ -343,6 +368,8 @@ header {
                 position: relative;
                 font-size: 20px;
                 padding-top: 5px;
+
+
 
                 .circle {
                     background: red;
@@ -358,6 +385,10 @@ header {
                     left: 7px;
 
                 }
+
+                @include responsive(phone and phone-big) {
+                    font-size: 16px;
+                }
             }
 
             .user-img {
@@ -372,11 +403,23 @@ header {
                 display: inline-block;
                 margin-right: 10px;
 
+                @include responsive(phone and phone-big) {
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 10px;
+                }
+
             }
 
             .fa-caret-down {
                 position: relative;
                 top: -8px;
+
+                @include responsive(phone and phone-big) {
+
+                    margin-right: 5px;
+                }
+
 
             }
 

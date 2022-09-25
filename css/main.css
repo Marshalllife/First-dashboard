@@ -306,7 +306,7 @@ header {
   header {
     margin-left: 0;
     padding-left: -3px;
-    padding-top: 1px;
+    padding-top: 7px;
     overflow: hidden;
     height: 50px;
     top: 0;
@@ -341,18 +341,18 @@ header .search-area input[type=text] {
   padding: 10px;
   font-weight: 100;
   width: 80%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 header .search-area input[type=text]::-moz-placeholder {
-  text-align: left;
+  text-align: center;
   font-weight: 100;
 }
 header .search-area input[type=text]:-ms-input-placeholder {
-  text-align: left;
+  text-align: center;
   font-weight: 100;
 }
 header .search-area input[type=text]::placeholder {
-  text-align: left;
+  text-align: center;
   font-weight: 100;
 }
 header .search-area input[type=text]:hover {
@@ -449,7 +449,7 @@ header .user-area a .fa-caret-down {
 }
 @media only screen and (max-width: 600px) {
   header .user-area a .fa-caret-down {
-    margin-right: 4px;
+    margin-right: 5px;
   }
 }
 
@@ -458,6 +458,7 @@ input:focus,
 textarea:focus {
   background: transparent;
   outline: none;
+  cursor: wait;
 }
 
 @media only screen and (max-width: 600px) {

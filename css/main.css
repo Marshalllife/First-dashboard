@@ -282,7 +282,7 @@ body {
 }
 
 header {
-  margin-left: 290px;
+  margin-left: 270px;
   background: #fff;
 }
 @media only screen and (max-width: 1139px) {
@@ -306,18 +306,7 @@ header {
   header {
     margin-left: 0;
     padding-left: -3px;
-    padding-top: 6px;
-    overflow: hidden;
-    height: 50px;
-    top: 0;
-    right: 0;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 421px) {
-  header {
-    margin-left: 0;
-    padding-left: -2px;
+    padding-top: 1px;
     overflow: hidden;
     height: 50px;
     top: 0;
@@ -335,19 +324,13 @@ header .search-area {
     padding-top: 3px;
   }
 }
-@media only screen and (max-width: 421px) {
-  header .search-area {
-    margin-left: 15px;
-    padding-top: 3px;
-  }
-}
 header .search-area .fas {
   color: #a5adbd;
   margin-left: 20px;
 }
 @media only screen and (max-width: 600px) {
   header .search-area .fas {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 header .search-area input[type=text] {
@@ -359,11 +342,6 @@ header .search-area input[type=text] {
   font-weight: 100;
   width: 80%;
   transition: all 0.5s ease-in-out;
-}
-@media only screen and (max-width: 421px) {
-  header .search-area input[type=text] {
-    padding-top: 15px;
-  }
 }
 header .search-area input[type=text]::-moz-placeholder {
   text-align: left;
@@ -401,7 +379,6 @@ header .user-area {
     top: -35px;
     left: 15px;
     padding-right: 0;
-    vertical-align: middle;
   }
 }
 header .user-area a {
@@ -463,7 +440,7 @@ header .user-area a .user-img {
   header .user-area a .user-img {
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-right: 4px;
   }
 }
 header .user-area a .fa-caret-down {
@@ -472,12 +449,13 @@ header .user-area a .fa-caret-down {
 }
 @media only screen and (max-width: 600px) {
   header .user-area a .fa-caret-down {
-    margin-right: 5px;
+    margin-right: 4px;
   }
 }
-header input:active,
-header input:focus,
-header textarea:focus {
+
+input:active,
+input:focus,
+textarea:focus {
   background: transparent;
   outline: none;
 }

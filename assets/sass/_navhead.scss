@@ -189,7 +189,7 @@ body {
 
 
 header {
-    margin-left: 290px;
+    margin-left: 270px;
     background: #fff;
 
 
@@ -217,7 +217,7 @@ header {
     @include responsive(phone-big) {
         margin-left: 0;
         padding-left: -3px;
-        padding-top: 6px;
+        padding-top: 1px;
         overflow: hidden;
         height: 50px;
         top: 0;
@@ -230,27 +230,19 @@ header {
 
 
 
-    @include responsive(phone) {
-        margin-left: 0;
-        padding-left: -2px;
-        overflow: hidden;
-        height: 50px;
-        top: 0;
-        right: 0;
-        width: 100%;
-
-
-
-    }
-
-
-    // @include responsive(small-phone) {
+    // @include responsive(phone) {
     //     margin-left: 0;
-    //     padding-left: -3px;
+    //     padding-left: -2px;
     //     overflow: hidden;
     //     height: 50px;
+    //     top: 0;
+    //     right: 0;
+    //     width: 100%;
+
+
 
     // }
+
 
 
 
@@ -264,17 +256,17 @@ header {
             padding-top: 3px;
         }
 
-        @include responsive(phone) {
-            margin-left: 15px;
-            padding-top: 3px;
-        }
+        // @include responsive(phone) {
+        //     margin-left: 15px;
+        //     padding-top: 3px;
+        // }
 
         .fas {
             color: $greyDarkfont2;
             margin-left: 20px;
 
             @include responsive(phone and phone-big) {
-                margin-left: 10px;
+                margin-left: 15px;
 
             }
 
@@ -290,9 +282,6 @@ header {
             width: 80%;
             transition: all 0.50s ease-in-out;
 
-            @include responsive(phone) {
-                padding-top: 15px;
-            }
 
 
 
@@ -301,9 +290,7 @@ header {
                 text-align: left;
                 font-weight: 100;
 
-
             }
-
 
             &:hover {
                 background: $greyDarkBG;
@@ -335,7 +322,7 @@ header {
             top: -35px;
             left: 15px;
             padding-right: 0;
-            vertical-align: middle;
+
         }
 
 
@@ -406,7 +393,7 @@ header {
                 @include responsive(phone and phone-big) {
                     width: 25px;
                     height: 25px;
-                    margin-right: 10px;
+                    margin-right: 4px;
                 }
 
             }
@@ -417,7 +404,7 @@ header {
 
                 @include responsive(phone and phone-big) {
 
-                    margin-right: 5px;
+                    margin-right: 4px;
                 }
 
 
@@ -428,12 +415,11 @@ header {
 
 
     }
+}
 
-    input:active,
-    input:focus,
-    textarea:focus {
-        background: transparent;
-        outline: none;
-    }
-
+input:active,
+input:focus,
+textarea:focus {
+    background: transparent;
+    outline: none;
 }
